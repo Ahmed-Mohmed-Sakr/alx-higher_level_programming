@@ -1,10 +1,10 @@
 #!/bin/bash
 echo "Compiling $PYFILE ..."
 
-NEWFILE="${PYFILE%.py}.pyc"
+PYFILEc="${PYFILE%.py}.pyc"
 
-if [ ! -e "$NEWFILE" ]; then
-	touch "$NEWFILE"
+if [ ! -e "$PYFILEc" ]; then
+	touch "$PYFILEc"
 fi
 
-python3 -m compileall "$NEWFILE"
+python3 -m compileall "$PYFILEc"
