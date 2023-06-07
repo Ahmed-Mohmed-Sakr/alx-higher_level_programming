@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Compiling $PYFILE ..."
+
+NEWFILE="${PYFILE%.py}.pyc"
+
+if [ ! -e "$NEWFILE" ]; then
+	touch "$NEWFILE"
+fi
+
+python3 -m compileall "$NEWFILE"
