@@ -5,8 +5,11 @@ if __name__ == "__main__":
     argv_c = len(argv)
 
     if argv_c == 1:
-        print("{} argument.".format(argv_c - 1))
+        print("0 argument.")
+    elif argv_c == 2:
+        print("1 argument:")
     else:
-        print("{} argument:".format(argv_c - 1))
-        for val in range(1, argv_c):
-            print("{}: {}".format(val, argv[val]))
+        print("{} arguments:".format(argv_c - 1))
+
+    for val in range(1, argv_c):
+        print("{}: {}".format(val, argv[val]))
