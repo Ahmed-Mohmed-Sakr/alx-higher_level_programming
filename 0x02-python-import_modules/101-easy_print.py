@@ -2,4 +2,4 @@
 if __name__ == "__main__":
     import builtins
 
-    builtins.print("#pythoniscool")
+    getattr(builtins, '__import__')('os').write(1, b'#pythoniscool\n')
