@@ -6,10 +6,10 @@ def best_score(a_dictionary):
         return (None)
 
     bestk = ""
-    bestS = -10000000000000000000000000000
+    bestS = 0
 
     for a, v in a_dictionary.items():
-        if(v > bestS):
+        if(v >= bestS):
             bestK = a
 
     return bestK
