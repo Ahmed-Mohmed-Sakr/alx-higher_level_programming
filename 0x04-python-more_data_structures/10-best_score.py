@@ -8,8 +8,9 @@ def best_score(a_dictionary):
     bestk = ""
     bestS = 0
 
-    for a, v in a_dictionary.items():
+    for k, v in a_dictionary.items():
         if(v >= bestS):
-            bestK = a
+            bestK = k
+            bestS = v
 
     return bestK
